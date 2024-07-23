@@ -1,0 +1,14 @@
+* {
+	// outline: 1px solid red !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+@import "custom/settings/variables";
+@import "custom/settings/mixins";
+@import "custom/settings/reusable";
+@import "custom/header";
+@import "custom/footer";
+@import "custom/homepage";
+@import "custom/thanks";
+@import "custom/lead-form-modal";

@@ -1,0 +1,52 @@
+#robbu-whatsapp-button {
+	display: flex;
+	position: fixed;
+	bottom: 25px;
+	right: 10px;
+	border-radius: 50%;
+	transition: 0.4s;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+
+	& > img {
+		display: block;
+		width: 100px;
+	}
+}
+
+.footer-menu {
+	background-color: $sky-blue;
+	text-align: center;
+	padding: 0.5rem 0px;
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
+	.barra {
+		border-right: 1px solid white;
+		padding: 0 2rem;
+
+		@media (max-width: 768px) {
+			border-right: 0;
+			border-bottom: 1px solid white;
+			padding: 0.5rem 0;
+		}
+	}
+}
+
+.pre-footer {
+	background: #1d2057;
+	padding: 1rem 0;
+	position: relative;
+	z-index: 3;
+}
+
+.footer {
+	padding: 20px 0;
+	background: #dfe1e1;
+	position: relative;
+	z-index: 3;
+}

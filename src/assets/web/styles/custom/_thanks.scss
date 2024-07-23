@@ -1,0 +1,61 @@
+.agradecimento {
+	width: 100%;
+	height: 100%;
+	background: $blue url("../../../themes/web/images/background-banner.webp") no-repeat center center/cover;
+
+	@media (max-width: 991px) {
+		background: $blue url(" ../../../themes/web/images/background-banner-mobile.webp") no-repeat top center;
+	}
+
+	.container {
+		color: $white;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.recebemos {
+		font-size: 4rem;
+		font-weight: bold;
+		color: $red;
+		line-height: 100%;
+		margin-bottom: 2rem;
+
+		@media (max-width: 992px) {
+			font-size: 3rem;
+		}
+
+		@media (max-width: 768px) {
+			margin-top: 2rem;
+			font-size: 2rem;
+		}
+	}
+
+	.blue-friday-container {
+		text-align: center;
+
+		.blue-neon,
+		.friday-neon {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.blue-neon {
+			filter: drop-shadow(0px -1rem 30px rgba(#124fd4, 1));
+			animation: flicker 5s infinite 7s step-end;
+		}
+
+		.friday-neon {
+			filter: drop-shadow(0px 1rem 30px rgba(#ff212a, 0.5));
+			margin-top: -3%;
+			animation: flicker 6s infinite step-end;
+		}
+
+		.logo-wizard {
+			width: 230px;
+			height: auto;
+			animation-delay: 0.5s !important;
+		}
+	}
+}

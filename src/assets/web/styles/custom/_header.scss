@@ -1,0 +1,104 @@
+.header {
+    padding: 0rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+	background-color: green;
+
+    .navbar-brand {
+        img {
+            @media(max-width: 1200px) {
+                max-width: 180px;
+            }
+        }
+    }
+
+    #WizNavbar {
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+
+            .nav-item {
+                margin: 0 .5rem;
+
+                .nav-link {
+                    font-weight: 700;
+                    color: $blue;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
+
+                &:last-child {
+                    margin-left: .5rem;
+                    margin-right: 0;
+
+                    .nav-link {
+                        border: none;
+                    }
+                }
+
+                @media(max-width: 991px) {
+                    width: 100%;
+                    text-align: center;
+
+                    .nav-link {
+                        border-right: none;
+                        border-top: 1px solid $light-gray;
+
+                        &:hover {
+                            background: $light-gray-3;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-top: 1rem;
+                    }
+
+                    &:last-child {
+                        border-top: 1px solid $light-gray;
+                        padding-top: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+	.navbar {
+		background: $white;
+		position: relative;
+		z-index: 999;
+	}
+
+	.cta-attention {
+		background-color: $red;
+		color: $white;
+		padding: .75rem 1rem;
+		width: 100%;
+		z-index: 99;
+		text-align: center;
+		font-weight: bold;
+		box-shadow: 0 0 1rem rgba($color: $black, $alpha: .3);
+		transition: all ease-in-out 1s;
+		margin-top: -100%;
+
+		span {
+			text-decoration: underline !important;
+			text-decoration-color: $red !important;
+		}
+
+		&:hover {
+			background-color: darken($color: $red, $amount: 2);
+		}
+
+		&.show {
+			margin-top: 0;
+		}
+
+		@media(max-width: 767px) {
+			font-size: .8rem;
+			padding: .5rem 1rem;
+		}
+	}
+
+}

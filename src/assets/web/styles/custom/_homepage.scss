@@ -1,0 +1,175 @@
+#homepage {
+	background-color: $blue;
+
+	#banner {
+		background: $blue url("../../../themes/web/images/background-banner.webp") no-repeat center center/cover;
+		margin-top: 71px;
+		overflow: hidden;
+
+		@media (max-width: 991px) {
+			min-height: auto;
+			background: $blue url(" ../../../themes/web/images/background-banner-mobile.webp") no-repeat top center;
+		}
+
+		.floating-form {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-wizard-on {
+			max-width: 290px;
+		}
+
+		.texto-legal-banner {
+			border-top: 3px solid $sky-blue;
+			padding: 1rem 0;
+
+			@media (max-width: 998px) {
+				border-top: 0;
+			}
+		}
+	}
+
+	#rtb {
+		background-color: $white;
+		padding: 2rem 0;
+
+		.banner-list {
+			// padding: 0px;
+			list-style: none;
+			margin: 0;
+
+			li {
+				margin-bottom: 1.5rem;
+				padding-left: calc(26px + 1rem);
+				position: relative;
+				font-size: 1rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0px;
+					top: 3px;
+					border-left: 20px solid $red;
+					border-top: 11px solid transparent;
+					border-bottom: 11px solid transparent;
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0.7rem;
+					top: 3px;
+					opacity: 0.5;
+					border-left: 20px solid $red;
+					border-top: 11px solid transparent;
+					border-bottom: 11px solid transparent;
+				}
+			}
+		}
+	}
+
+	#promo {
+		padding: 2rem 0;
+		background-color: #f3f3f3;
+
+		.promo-video {
+			width: 100%;
+			aspect-ratio: 1.7777777778;
+			margin: 1.5rem 0;
+
+			@media (max-width: 768px) {
+				aspect-ratio: 0.5625;
+			}
+		}
+	}
+
+	#wizmenew {
+		padding: 2rem 0 0;
+		background-color: #f3f3f3;
+
+		.text {
+			color: #003057;
+			text-align: start;
+			padding-top: 3.5rem
+				}
+		.text b {
+			margin-bottom: 1.2rem;
+			margin-top: 1.2rem;
+			font-size: 2rem;
+			display: block;
+			line-height: 2rem
+		}
+	}
+
+	#compromisso {
+		padding: 2rem 0;
+		background-color: #ffffff;
+
+		.my-3 {
+			color: #003057;
+			font-weight: 600;
+			font-size: 22px
+				}
+		.mb-3 {
+			color: #003057;
+			font-weight: 600;
+			font-size: 24px
+		}
+	}
+
+	#faq {
+		padding: 2rem 0;
+
+		.accordion {
+			.accordion-item {
+				background-color: transparent;
+				color: $white;
+
+				.accordion-button {
+					background-color: transparent;
+					color: $white;
+					font-size: 1.2rem;
+					font-weight: bold;
+
+					&::after {
+						background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+					}
+
+					&:hover {
+						background-color: #004882c0;
+					}
+
+					&:focus {
+						box-shadow: none;
+						border-color: rgba(0, 0, 0, 0.125);
+					}
+				}
+
+				.accordion-button.collapsed {
+					&::after {
+						--bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+					}
+				}
+			}
+		}
+	}
+
+	small {
+		&.texto-legal {
+			font-size: 10px;
+			line-height: 150%;
+			display: block;
+
+			@media (max-width: 998px) {
+				font-size: 8px;
+			}
+		}
+	}
+}
